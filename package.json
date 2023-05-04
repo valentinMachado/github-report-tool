@@ -1,0 +1,14 @@
+{
+  "name": "github-report-tool",
+  "version": "0.0.0",
+  "description": "make github weekly report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "octokit": "^2.0.14"
+  }
+}
