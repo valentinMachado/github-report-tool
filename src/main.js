@@ -29,17 +29,16 @@ const main = async () => {
     createSectionComment(label, array, character="x") {
       if (!array.length) return "";
 
-      let listUrl = "";
+      let listUrl = '';
       array.forEach((el, index) => {
-        if(character){
-          listUrl += ` <a title="${el.title}" href="${el.url}">${character}</a>`;
-        }else{
-          listUrl += ` <a title="${el.title}" href="${el.url}">${index + 1}</a>`;
-        }
+        // if(character){
+        //   listUrl += ` <a title="${el.title}" href="${el.url}">${character}</a>`;
+        // }else{
+        // }
+        listUrl += `<li><a href="${el.url}">${el.title}</a></li>`;
       });
-      let result = `<li>${label}: ${listUrl}</li>`;
 
-      result = `<script>console.log("${this.name,label}")</script>`
+      const result = `<details><summary>${label}</summary>${listUrl}</details>`
 
       return result;
     }
