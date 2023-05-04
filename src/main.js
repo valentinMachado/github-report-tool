@@ -38,7 +38,7 @@ const main = async () => {
         listUrl += `<li><a href="${el.url}">${el.title}</a></li>`;
       });
 
-      const result = `<details><summary>${label}</summary>${listUrl}</details>`
+      const result = `<details><summary>${label} (${array.length})</summary>${listUrl}</details>`
 
       return result;
     }
