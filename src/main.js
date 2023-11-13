@@ -45,14 +45,14 @@ const main = async () => {
 
     toRowMD() {
       let comment = "";
-      comment += this.createSectionComment(
-        "Issue comments",
-        this.issueComments
-      );
-      comment += this.createSectionComment(
-        "Issue created",
-        this.issueContributions
-      );
+      // comment += this.createSectionComment(
+      //   "Issue comments",
+      //   this.issueComments
+      // );
+      // comment += this.createSectionComment(
+      //   "Issue created",
+      //   this.issueContributions
+      // );
       comment += this.createSectionComment(
         "PR created",
         this.pullRequestCreated
@@ -62,8 +62,8 @@ const main = async () => {
         this.pullRequestReviewed
       );
       comment += this.createSectionComment("Working branches", this.branches);
-      comment += this.createSectionComment("Discussions", this.discussions);
-      comment += this.createSectionComment("Ongoing questions", this.questions, "?");
+      // comment += this.createSectionComment("Discussions", this.discussions);
+      // comment += this.createSectionComment("Ongoing questions", this.questions, "?");
 
       return `|${this.name}| ? | ? | ${comment} |`;
     }
