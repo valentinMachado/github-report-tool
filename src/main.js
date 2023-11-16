@@ -368,7 +368,7 @@ const main = async () => {
   await repoRequests("VCityTeam", "UD-Viz");
   await repoRequests("VCityTeam", "Itowns");
   await repoRequests("itowns", "itowns");
-  // await repoRequests("VCityTeam", "GALERI3");
+  await repoRequests("VCityTeam", "GALERI3");
 
   const outputPath = process.argv[2];
   if (!outputPath) throw new Error("need to specify output file");
